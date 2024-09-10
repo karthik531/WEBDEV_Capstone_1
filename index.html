@@ -2,86 +2,105 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" >
+        <link href="./style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <title>My Resume</title>
     </head>
     <body>
-        <img src="./images/my_photo.jpg" height="150"/>
-        <h1>Sai Karthik M.S.V</h1>
-        <a href="https://www.linkedin.com/in/msvsk/" target="_blank">LinkedIn</a> &nbsp;
-        <a href="https://github.com/karthik531" target="_blank">GitHub</a>
-        <hr/>
+        <div class="grid-container">
+            <div class="header section">
+                <img src="./images/my_photo.jpg" height="150"/>
+                <h1 class="title">Sai Karthik M.S.V</h1>
+                <a href="https://www.linkedin.com/in/msvsk/" target="_blank">LinkedIn</a> &nbsp;
+                <a href="https://github.com/karthik531" target="_blank">GitHub</a>
+                
+            </div>
 
-        <h2>Summary</h2>
-        <p>I'm a Software Engineer who's passionate to code, not afraid of change & always striving to be better than today.</p>
-        <hr/>
+            <div class="skills section">
+                <h2>Technical Profile</h2>
+                <ul>
+                    <li>C/C++, Java, Python, Android</li>
+                    <li>Working knowledge of Selenium WebDriver framework.</li>
+                    <li>In college, worked on web technologies like HTML, CSS, JavaScript, Servlets, JSP & databases like Oracle, MySQL, PostgreSQL.</li>
+                </ul>
+                
+            </div>
 
-        <h2>Work Experience</h2>
-        <h3>Lead Engineer (Dev) { Nov 2019 - Present }</h3>
-        <h4>Samsung Research Institute Bengaluru (SRI-B), Hyderabad</h4>
-        <ul>
-            <li>I work on Camera HAL interface, an integral component that exposes the camera hardware to Android framework. Involves C/C++ development.</li>
-            <li>Worked on development-to-market of latest features like RearSelfie, AstroHyperlapse & AutoTracking for latest flagship models Galaxy S24 & Fold6/Flip6.</li>
-            <li>Worked on camera launch time optimization in "Mid-tier" models by modifying camera-open flow, that lead to ~11% improvement. This helped to stay ahead of stiff competition in the segment.</li>
-            <li>Fixed various memory leak issues, usually ranging from 1-3MB per camera operation, thereby reducing memory usage by ~200MB over a typical usage period & improved system performance KPI.</li>
-            <li>Co-working with Qualcomm Engineers directly in Hyderabad joint lab, in turn reducing remote interaction from Bengaluru office. Saved ~1 day of extra time during critical issue debugging.</li>
-            <li>Accomplishment: Received Samsung MD appreciation award & Samsung Excellence Award multiple times for being among the top performers in my team.</li>
-        </ul>
-        <h3>Automation Engineer (QA) { July 2018 - Oct 2019 }</h3>
-        <h4>Wells Fargo EGS (India), Hyderabad</h4>
-        <ul>
-            <li>Worked as a QA Test Automation Engineer in a fast-moving Scrum team.</li>
-            <li>Was part of an effort to automate a huge manual regression test-suite. Automated about 70% of the suite, thereby reducing a lot of repeated manual testing efforts during every release.</li>
-            <li>Authored & automated functional test cases in every sprint so they can be run in parallel without manual intervention, thereby eliminating a day's extra manual effort every week.</li>
-            <li>Accomplishment: Honored with Wells Fargo Champion, an award given to top performers in the team every quarter.</li>
-        </ul>
-        <hr/>
+            <div class="summary section">
+                <h2>Summary</h2>
+                <p>I'm a Software Engineer who's passionate to code, not afraid of change & always striving to be better than today.</p>
+                
+            </div>
 
-        <h2>Awards</h2>
-        <ul>
-            <li>
-                <h3>Samsung Excellence Award</h3>
-                <h4>Issued by Samsung Research Institute, Bengaluru · Jul 2024</h4>
-                <p>Honored with this award in recognition of my commitment and contributions to the successful launch of the Samsung Galaxy Fold6/Flip6.</p>
-            </li>
-            <li>
-                <h3>Samsung Excellence Award</h3>
-                <h4>Issued by Samsung Research Institute, Bengaluru · Apr 2023</h4>
-                <p>Recognized with this award for my dedication and contributions to the successful launch of the Samsung Galaxy S23 series.</p>
-            </li>
-            <li>
-                <h3>Wells Fargo Champion - Living Our Values</h3>
-                <h4>Issued by Wells Fargo · Jun 2019</h4>
-                <p>Being a Wells Fargo Champion demonstrates the immense hard-work, accountability and commitment towards one's work. It also signifies the skill set brought to the team and, as a result, contributing greatly to the success of the team.</p>
-            </li>
-        </ul>
-        <hr/>
+            <div class="awards section">
+                <h2>Awards</h2>
+                <br />
+                        <h3>Samsung Excellence Award</h3>
+                        <h4>Issued by Samsung Research Institute, Bengaluru · Jul 2024</h4>
+                        <p>Honored with this award in recognition of my commitment and contributions to the successful launch of the Samsung Galaxy Fold6/Flip6.</p>
+                    
+                        <h3>Samsung Excellence Award</h3>
+                        <h4>Issued by Samsung Research Institute, Bengaluru · Apr 2023</h4>
+                        <p>Recognized with this award for my dedication and contributions to the successful launch of the Samsung Galaxy S23 series.</p>
+                    
+                        <h3>Wells Fargo Champion - Living Our Values</h3>
+                        <h4>Issued by Wells Fargo · Jun 2019</h4>
+                        <p>Being a Wells Fargo Champion demonstrates the immense hard-work, accountability and commitment towards one's work. It also signifies the skill set brought to the team and, as a result, contributing greatly to the success of the team.</p>
+                    
+                
+            </div>
 
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>Jawaharlal Nehru Technological University, Hyderabad (JNTUH)</h3>
-                <h4>B.Tech - Computer Science and Engineering (CSE)</h4>
-                <p>2014-2018</p>
-            </li>
-            <li>
-                <h3>Sri Chaitanya Junior College</h3>
-                <h4>Intermediate - Maths, Physics & chemistry</h4>
-                <p>2012-2014</p>
-            </li>
-        </ul>
-        <hr/>
+            <div class="workex section">
+                <h2>Work Experience</h2>
+                <h3>Lead Engineer (Dev) { Nov 2019 - Present }</h3>
+                <h4>Samsung Research Institute Bengaluru (SRI-B), Hyderabad</h4>
+                <ul>
+                    <li>I work on Camera HAL interface, an integral component that exposes the camera hardware to Android framework. Involves C/C++ development.</li>
+                    <li>Worked on development-to-market of latest features like RearSelfie, AstroHyperlapse & AutoTracking for latest flagship models Galaxy S24 & Fold6/Flip6.</li>
+                    <li>Worked on camera launch time optimization in "Mid-tier" models by modifying camera-open flow, that lead to ~11% improvement. This helped to stay ahead of stiff competition in the segment.</li>
+                    <li>Fixed various memory leak issues, usually ranging from 1-3MB per camera operation, thereby reducing memory usage by ~200MB over a typical usage period & improved system performance KPI.</li>
+                    <li>Co-working with Qualcomm Engineers directly in Hyderabad joint lab, in turn reducing remote interaction from Bengaluru office. Saved ~1 day of extra time during critical issue debugging.</li>
+                    <li>Accomplishment: Received Samsung MD appreciation award & Samsung Excellence Award multiple times for being among the top performers in my team.</li>
+                </ul>
+                <h3>Automation Engineer (QA) { July 2018 - Oct 2019 }</h3>
+                <h4>Wells Fargo EGS (India), Hyderabad</h4>
+                <ul>
+                    <li>Worked as a QA Test Automation Engineer in a fast-moving Scrum team.</li>
+                    <li>Was part of an effort to automate a huge manual regression test-suite. Automated about 70% of the suite, thereby reducing a lot of repeated manual testing efforts during every release.</li>
+                    <li>Authored & automated functional test cases in every sprint so they can be run in parallel without manual intervention, thereby eliminating a day's extra manual effort every week.</li>
+                    <li>Accomplishment: Honored with Wells Fargo Champion, an award given to top performers in the team every quarter.</li>
+                </ul>
+                
+            </div>
 
-        <h2>Technical Profile</h2>
-        <ul>
-            <li>C/C++, Java, Python, Android</li>
-            <li>Working knowledge of Selenium WebDriver framework.</li>
-            <li>In college, worked on web technologies like HTML, CSS, JavaScript, Servlets, JSP & databases like Oracle, MySQL, PostgreSQL.</li>
-        </ul>
-        <hr/>
+            <div class="education section">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Jawaharlal Nehru Technological University, Hyderabad (JNTUH)</h3>
+                        <h4>B.Tech - Computer Science and Engineering (CSE)</h4>
+                        <p>2014-2018</p>
+                    </li>
+                    <li>
+                        <h3>Sri Chaitanya Junior College</h3>
+                        <h4>Intermediate - Maths, Physics & chemistry</h4>
+                        <p>2012-2014</p>
+                    </li>
+                </ul>
+                
+            </div>
 
-        <footer>
-            <p>Copyright &#169; Pending</p>
-            <a href="./public/contact.html">Contact Me</a>
-        </footer>
+            <div class="footer section">
+                <footer>
+                    <p>Copyright &#169; Pending</p>
+                    <a href="./public/contact.html">Contact Me</a>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,98 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr;
+    gap: 15px;
+}
+
+.section {
+    background-color: beige;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.03rem;
+}
+
+.header {
+    grid-column: span 2;
+    background-color: whitesmoke;
+}
+
+.header a {
+    color: rgba(0, 0, 0, 0.659);
+    font-size: large;
+}
+
+.skills {
+    grid-column: span 2;
+    background-color: rgb(209, 209, 209);
+}
+
+.summary {
+    grid-column: span 3;
+    background-color: #D8A25E;
+}
+
+.education {
+    grid-column: span 3;
+    background-color: #A04747;
+    color: white;
+}
+
+.workex {
+    grid-column: span 3;
+    background-color: #343131;
+    color: white;
+}
+
+.workex li {
+    padding: 3px;
+}
+
+.awards {
+    grid-column: span 1;
+    grid-row-start: span 3;
+    background-color: #EEDF7A;
+}
+
+.awards p {
+    padding: 10px 0px;
+}
+
+.footer {
+    grid-column: span 4;
+    text-align: center;
+    background-color: #343131;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+}
+
+.title {
+    font-size: 50px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+h3, h4 {
+    margin: 5px 0px;
+    font-weight: 700;
+}
