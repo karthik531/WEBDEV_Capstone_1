@@ -1,9 +1,7 @@
 .grid-container {
-    height: 100vh;
-    margin: 5px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr 1/10fr;
     gap: 15px;
 }
 
@@ -19,13 +17,10 @@
     font-size: 1.03rem;
 }
 
-ul {
-    padding-left: 20px;
-}
-
 .header {
-    background-color: whitesmoke;
     grid-column: span 2;
+    background-color: whitesmoke;
+    /* background-color: #FABC3F; */
 }
 
 .header a {
@@ -34,42 +29,31 @@ ul {
 }
 
 .techprofile {
+    grid-column: span 2;
+    /* background-color: rgb(209, 209, 209); */
     background-color: #a36713;
     color: white;
-    grid-column: span 2;
 }
 
 .summary {
+    grid-column: span 3;
+    /* background-color: #D8A25E; */
     background-color: rgb(209, 209, 209);
-    grid-column: span 3;
-}
-
-.awards {
-    background-color: #EEDF7A;
-    grid-row: span 2;
-}
-
-.awards ul {
-    padding: 0;
-    list-style: none;
-}
-
-.workex {
-    background-color: #821131;
-    color: white;
-    grid-column: span 3;
 }
 
 .education {
+    grid-column: span 3;
+    /* background-color: #A04747; */
     background-color: #e05a0c;
     color: white;
     font-size: 1rem;
-    grid-column: span 3;
 }
 
-.education ul {
-    list-style: none;
-    padding: 0;
+.workex {
+    grid-column: span 3;
+    /* background-color: #343131; */
+    background-color: #821131;
+    color: white;
 }
 
 .workex li {
@@ -77,32 +61,20 @@ ul {
 }
 
 .awards {
-    font-size: 1.1rem;
+    grid-column: span 1;
+    grid-row-start: span 3;
+    background-color: #EEDF7A;
 }
 
 .awards p {
     padding: 10px 0px;
 }
 
-.hobbies {
-    font-size: 1.2rem;
-}
-
-.hobbies ul {
-    list-style: none;
-    padding: 0;
-}
-
-.hobbies li {
-    padding-bottom: 10px;
-}
-
 .footer {
+    grid-column: span 4;
     text-align: center;
     background-color: #343131;
     color: white;
-    grid-column: span 4;
-    font-size: 1.2rem;
 }
 
 .footer p {
@@ -111,22 +83,16 @@ ul {
 
 .footer a {
     color: white;
-    text-decoration: none;
 }
 
 .title {
     font-size: 50px;
 }
 
-.grid-container-contact {
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
-
 .contact {
+    grid-column: span 4;
     background-color: #C7253E;
     color: white;
-    grid-area: span 1 / span 4;
 }
 
 .contact a {
@@ -146,10 +112,6 @@ h1, h2 {
 h3, h4 {
     margin: 5px 0px;
     font-weight: 700;
-}
-
-.highlight {
-    color: #ffe100;
 }
 
 @media (min-width: 871px) and (max-width: 1000px) {
@@ -178,13 +140,6 @@ h3, h4 {
     .title {
         font-size: 50px;
     }
-
-    .header, .summary {
-        order: -2;
-    }
-    .workex, .techprofile {
-        order: -1;
-    }
 }
 
 @media (max-width: 490px) {
@@ -201,12 +156,5 @@ h3, h4 {
 
     .title {
         font-size: 30px;
-    }
-
-    .header, .summary {
-        order: -2;
-    }
-    .workex, .techprofile {
-        order: -1;
     }
 }
