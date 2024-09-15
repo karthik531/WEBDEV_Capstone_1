@@ -1,5 +1,5 @@
 .grid-container {
-    height: 100vh;
+    height: 100%;
     margin: 5px;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -24,7 +24,8 @@ ul {
 }
 
 .header {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: #eadefa;
     grid-column: span 2;
 }
 
@@ -40,7 +41,9 @@ ul {
 }
 
 .summary {
-    background-color: rgb(209, 209, 209);
+    /* background-color: rgb(209, 209, 209); */
+    background-color: #765330;
+    color: white;
     grid-column: span 3;
 }
 
@@ -61,8 +64,8 @@ ul {
 }
 
 .education {
-    background-color: #e05a0c;
-    color: white;
+    background-color: #D7C3F1;
+    color: black;
     font-size: 1rem;
     grid-column: span 3;
 }
